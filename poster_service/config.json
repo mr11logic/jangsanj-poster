@@ -1,0 +1,71 @@
+{
+  "_comment": "Layout config for the JangSanj poster (template 1080x1080). Edit positions/sizes/colors here without touching the code.",
+  "canvas": {
+    "size": [1080, 1080]
+  },
+  "template_path": "templates/Template-JangSanj.jpg",
+  "output_dir": "output",
+  "fonts": {
+    "dana_regular":      "fonts/Dana-Regular.ttf",
+    "dana_medium":       "fonts/Dana-Medium.ttf",
+    "dana_bold":         "fonts/Dana-Bold.ttf",
+    "serif_regular":     "fonts/LiberationSerif-Regular.ttf",
+    "serif_bold":        "fonts/LiberationSerif-Bold.ttf"
+  },
+  "elements": {
+    "percent_24h": {
+      "text_template": "{value}%",
+      "font": "serif_bold",
+      "size": 240,
+      "color": [255, 51, 51],
+      "anchor": "mm",
+      "position": [540, 330],
+      "persian_digits": false,
+      "reshape": false,
+      "stroke": null
+    },
+    "percent_7d": {
+      "text_template": "{value}%",
+      "font": "serif_bold",
+      "size": 105,
+      "color": [255, 51, 51],
+      "anchor": "mm",
+      "position": [730, 665],
+      "persian_digits": false,
+      "reshape": false,
+      "stroke": null
+    },
+    "percent_30d": {
+      "text_template": "{value}%",
+      "font": "serif_bold",
+      "size": 105,
+      "color": [255, 51, 51],
+      "anchor": "mm",
+      "position": [350, 665],
+      "persian_digits": false,
+      "reshape": false,
+      "stroke": null
+    },
+    "date_en": {
+      "font": "serif_regular",
+      "size": 30,
+      "color": [255, 255, 255],
+      "anchor": "lm",
+      "position": [215, 175],
+      "persian_digits": false,
+      "reshape": false,
+      "stroke": null
+    },
+    "date_fa": {
+      "font": "dana_medium",
+      "size": 30,
+      "color": [255, 255, 255],
+      "anchor": "rm",
+      "position": [865, 175],
+      "persian_digits": true,
+      "reshape": false,
+      "direction": "rtl",
+      "stroke": null
+    }
+  }
+}
