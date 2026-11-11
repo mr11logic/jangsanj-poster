@@ -1,0 +1,24 @@
+# Render.com deployment config
+# Docs: https://render.com/docs/blueprint-spec
+#
+# After pushing this repo to GitHub, go to:
+#   https://dashboard.render.com/blueprints
+# and connect the repo. Render will read this file and create the service.
+
+services:
+  - type: web
+    name: jangsanj-poster
+    runtime: docker
+    plan: free              # free tier; switch to 'starter' for $7/mo (no cold-start)
+    region: frankfurt       # closest to Iran/Europe; other options: oregon, ohio, singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: HOST
+        value: 0.0.0.0
+    # Render's free web services spin down after 15 min of inactivity.
+    # The first request after sleep takes ~30s to wake up. Upgrade to
+    # 'starter' plan if you need always-on.

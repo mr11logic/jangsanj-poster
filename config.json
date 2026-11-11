@@ -1,0 +1,116 @@
+{
+  "_comment": "Layout config for the JangSanj poster (template 1080x1080). Edit positions/sizes/colors here without touching the code.",
+  "canvas": {
+    "size": [
+      1080,
+      1080
+    ]
+  },
+  "template_path": "templates/Template-JangSanj.jpg",
+  "output_dir": "output",
+  "fonts": {
+    "dana_regular": "fonts/Dana-Regular.ttf",
+    "dana_medium": "fonts/Dana-Medium.ttf",
+    "dana_bold": "fonts/Dana-Bold.ttf",
+    "serif_regular": "fonts/LiberationSerif-Regular.ttf",
+    "serif_bold": "fonts/LiberationSerif-Bold.ttf",
+    "sans_regular": "fonts/LiberationSans-Regular.ttf",
+    "sans_bold": "fonts/LiberationSans-Bold.ttf",
+    "playfair_bold": "fonts/PlayfairDisplay-Bold.ttf",
+    "playfair_black": "fonts/PlayfairDisplay-Black.ttf",
+    "bodoni_black": "fonts/BodoniModa-Black.ttf",
+    "bodoni_bold": "fonts/BodoniModa-Bold.ttf",
+    "abril": "fonts/AbrilFatface-Regular.ttf"
+  },
+  "elements": {
+    "percent_24h": {
+      "text_template": "{value}%",
+      "font": "bodoni_bold",
+      "size": 195,
+      "color": [
+        220,
+        38,
+        38
+      ],
+      "anchor": "mm",
+      "position": [
+        540,
+        360
+      ],
+      "persian_digits": false,
+      "reshape": false,
+      "stroke": null
+    },
+    "percent_7d": {
+      "text_template": "{value}%",
+      "font": "bodoni_bold",
+      "size": 65,
+      "color": [
+        220,
+        38,
+        38
+      ],
+      "anchor": "mm",
+      "position": [
+        730,
+        670
+      ],
+      "persian_digits": false,
+      "reshape": false,
+      "stroke": null
+    },
+    "percent_30d": {
+      "text_template": "{value}%",
+      "font": "bodoni_bold",
+      "size": 65,
+      "color": [
+        220,
+        38,
+        38
+      ],
+      "anchor": "mm",
+      "position": [
+        350,
+        670
+      ],
+      "persian_digits": false,
+      "reshape": false,
+      "stroke": null
+    },
+    "date_en": {
+      "font": "sans_regular",
+      "size": 30,
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "anchor": "lm",
+      "position": [
+        215,
+        160
+      ],
+      "persian_digits": false,
+      "reshape": false,
+      "stroke": null
+    },
+    "date_fa": {
+      "font": "dana_medium",
+      "size": 30,
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "anchor": "rm",
+      "position": [
+        865,
+        160
+      ],
+      "persian_digits": true,
+      "reshape": false,
+      "direction": "rtl",
+      "stroke": null
+    }
+  }
+}
